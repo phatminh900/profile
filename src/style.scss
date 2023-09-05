@@ -536,6 +536,14 @@ button {
       width: var(--icon-width-base);
     }
   }
+  &__github {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--medium-font-size);
+    & img {
+      width: 30%;
+    }
+  }
   &__btn {
     background-color: var(--color-primary);
     padding: var(--gutter-base);
