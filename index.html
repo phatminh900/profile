@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My profile</title>
+    <link rel="stylesheet" href="./src/style.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a href="#about-me" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#education" class="nav__link">Education</a>
+          </li>
+          <li class="nav__item">
+            <a href="#technologies" class="nav__link">Technologies</a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+          <li class="nav__item">
+            <button class="nav__theme-mode-btn" title="Change mode">
+              <svg
+                class="nav__icon nav__icon--moon hidden"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="{1.5}"
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                />
+              </svg>
+              <svg
+                class="nav__icon nav__icon--sun"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <div class="hero__left">
+          <h1 class="heading-primary">
+            Hi I'm <span class="highlight">Phat</span> This is my
+            <span class="highlight">portfolio</span>
+          </h1>
+          <p class="hero__introduction text-bold">
+            A dedicated <span class="highlight">front end</span> developer, who
+            is willing to explore the world.
+          </p>
+          <button class="hero__btn">More about me ↓</button>
+        </div>
+        <img class="hero__img" src="/imgs/hero-img-svg.svg" alt="my hero img" />
+      </div>
+    </header>
+    <main>
+      <section id="about-me" class="section section--1">
+        <h2 class="heading-secondary">About me</h2>
+        <div class="section__content">
+          <p>
+            A young man who loves coding and building website. I can build
+            anything you need, and ready to get a job.
+          </p>
+          <img src="/imgs/about-me.svg" alt="" />
+        </div>
+      </section>
+      <section id="education" class="section section--2">
+        <h2 class="heading-secondary">Education</h2>
+        <div class="section__content">
+          <img src="/imgs/books.svg" alt="" />
+
+          <ul>
+            <li>
+              <p>FPT college</p>
+            </li>
+            <li>
+              <p>
+                Learning Information technology at Open University (Distance
+                Learning)
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="technologies" class="section section--3">
+        <h2 class="heading-secondary">Technologies I use</h2>
+        <ul class="cards">
+          <div class="card">
+            <div class="card--front">
+              <img src="/imgs/front-end.svg" alt="front end dev" />
+              <p class="card__description card__description--1">
+                Front end development
+              </p>
+              <div class="card__bottom card__bottom--1">&nbsp;</div>
+            </div>
+            <div class="card--back">
+              <ul class="card__list">
+                <li class="card__item">
+                  <p class="card__pointer">&#9755;</p>
+                  <p class="card__tech">HTML</p>
+                  <img src="/imgs/html.svg" alt="html" />
+                </li>
+                <li class="card__item">
+                  <p class="card__pointer">&#9755;</p>
+                  <p class="card__tech">Css</p>
+                  <img src="/imgs/css.svg" alt="css" />
+                </li>
+                <li class="card__item">
+                  <p class="card__pointer">&#9755;</p>
+                  <p class="card__tech">Javascript</p>
+                  <img src="/imgs/javascript.svg" alt="js" />
+                </li>
+                <li class="card__item">
+                  <p class="card__pointer">&#9755;</p>
+                  <p class="card__tech">React</p>
+                  <img src="/imgs/react.svg" alt="react" />
+                </li>
+                <li class="card__item">
+                  <p>&#9755;</p>
+                  <p class="card__tech">Typescript</p>
+                  <img src="/imgs/typecript.svg" alt="ts" />
+                </li>
+                <li class="card__item">
+                  <p class="card__pointer">&#9755;</p>
+                  <p class="card__tech">NextJs</p>
+                  <img src="/imgs/next-js.png" alt="nextjs" />
+                </li>
+                <li class="card__item">
+                  <p class="card__pointer">&#9755;</p>
+                  <p class="card__tech">Redux</p>
+                  <img src="/imgs/redux.svg" alt="redux" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card--front">
+              <img src="/imgs/back-end.svg" alt="front end dev" />
+              <p class="card__description card__description--2">
+                Back end development(Basic)
+              </p>
+              <div class="card__bottom card__bottom--2">&nbsp;</div>
+            </div>
+            <div class="card--back">
+              <ul class="card__list">
+                <li class="card__item">
+                  <p class="card__pointer">&#9755;</p>
+                  <p class="card__tech">NodeJs</p>
+                  <img src="/imgs/node-js.svg" alt="html" />
+                </li>
+                <li class="card__item">
+                  <p class="card__pointer">&#9755;</p>
+                  <p class="card__tech">Express</p>
+                  <img src="/imgs/express.png" alt="css" />
+                </li>
+                <li class="card__item">
+                  <p class="card__pointer">&#9755;</p>
+                  <p class="card__tech">MongoDb</p>
+                  <img src="/imgs/mongo-db.png" alt="js" />
+                </li>
+                <li class="card__item">
+                  <p class="card__pointer">&#9755;</p>
+                  <p class="card__tech">Mongoose</p>
+                  <img src="/imgs/mongoose.svg" alt="js" />
+                </li>
+                <li class="card__item">
+                  <p class="card__pointer">&#9755;</p>
+                  <p class="card__tech">PostMan</p>
+                  <img src="/imgs/post-man.png" alt="js" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card--front">
+              <img src="/imgs/front-end.svg" alt="front end dev" />
+              <p class="card__description card__description--3">
+                DevOps development(Loading...)
+              </p>
+              <div class="card__bottom card__bottom--3">&nbsp;</div>
+            </div>
+            <div class="card--back">
+              <p class="card__loading">
+                Loading... I'm will be learning in the feature
+              </p>
+            </div>
+          </div>
+        </ul>
+        <!-- <div class="section__content">
+          <ul>
+
+          </ul>
+          <img src="/imgs/tech-framwork.svg" alt="techs i use" />
+        </div> -->
+      </section>
+      <div class="section section section--3" id="projects">
+        <h2 class="heading-secondary">Projects</h2>
+        <div class="projects-box">
+          <div class="project-actions">
+            <button
+              data-tab="1"
+              class="project-actions__button project-actions__button--1 active"
+            >
+              Frontend projects
+            </button>
+            <button
+              data-tab="2"
+              class="project-actions__button project-actions__button--2"
+            >
+              Backend projects
+            </button>
+            <button
+              data-tab="3"
+              class="project-actions__button project-actions__button--3"
+            >
+              Devops projects
+            </button>
+          </div>
+          <!-- Front -->
+          <div class="project-contents project-contents--1">
+            <div class="project-content">
+              <div
+                class="project-content__img-box project-content__img-box--js"
+              >
+                <img
+                  src="/imgs/javascript.svg"
+                  alt="js"
+                  class="project-content__img"
+                />
+              </div>
+              <h3 class="project-content__heading">
+                My first project with JS,HTML,CSS
+              </h3>
+              <div class="project-content__content">
+                <p>
+                  Standard Js app that I'm sure pretty much devs must build one
+                  time in their life. <br />
+                  Because this is my first project, I still remember how
+                  challenging it was when I first build my own project with all
+                  DOM manipulation, applying styles,
+                </p>
+                <div class="project-content__product">
+                  <img
+                    src="/imgs/todo-app-low.jpg"
+                    data-src="/imgs/todo-app.png"
+                    alt="my first app"
+                    class="project-content__product-img blur"
+                  />
+                  <a
+                    target="_blank"
+                    href="https://todo-list-phattran.netlify.app/"
+                    >Link to the project</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div
+                class="project-content__img-box project-content__img-box--react"
+              >
+                <img
+                  src="/imgs/react.svg"
+                  alt="js"
+                  class="project-content__img"
+                />
+              </div>
+              <h3 class="project-content__heading">
+                My first project with React
+              </h3>
+              <div class="project-content__content">
+                <p>
+                  After spending hours learning React. This is my first
+                  completed React that I created. It's small but it uses modern
+                  and popular tools like Redux-toolkit,firebase, and others.
+                </p>
+                <div class="project-content__product">
+                  <img
+                    src="/imgs/natour-app-low.jpg"
+                    data-src="/imgs/natour-app.png"
+                    alt="my first app"
+                    class="project-content__product-img blur"
+                  />
+                  <a target="_blank" href="https://natour-reacttt.netlify.app/"
+                    >Link to the project</a
+                  >
+                </div>
+              </div>
+            </div>
+            <button data-tab="1" class="project-content__btn">See more</button>
+
+            <div class="project-contents__hidden project-contents__hidden--1">
+              <div class="project-content">
+                <div
+                  class="project-content__img-box project-content__img-box--react"
+                >
+                  <img
+                    src="/imgs/react.svg"
+                    alt="js"
+                    class="project-content__img"
+                  />
+                </div>
+                <h3 class="project-content__heading">
+                  My first full-stack project with React+Express
+                </h3>
+                <div class="project-content__content">
+                  <p>
+                    When finishing learning ExpressJs. I quickly built this app
+                    with fancy look, implemented CRUD operations a variety of
+                    amazing tools.
+                  </p>
+                  <div class="project-content__product">
+                    <img
+                      src="/imgs/tgdd-clone-low.jpg"
+                      data-src="/imgs/tgdd-clone.png"
+                      alt="my third  app"
+                      class="project-content__product-img blur"
+                    />
+                    <a
+                      target="_blank"
+                      href="https://tgdd-mern-project-123.onrender.com/"
+                      >Link to the project</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div
+                  class="project-content__img-box project-content__img-box--react"
+                >
+                  <img
+                    src="/imgs/react.svg"
+                    alt="js"
+                    class="project-content__img"
+                  />
+                </div>
+                <h3 class="project-content__heading">
+                  Current I'm building this app with React,React-Query and
+                  socket.io
+                </h3>
+                <div class="project-content__content">
+                  <p>
+                    It's time to get used to different technology. I'm building
+                    a chat application using React, React query for data
+                    fetching, Redux-toolkit for storing global data, taildwind
+                    css for styling.
+                  </p>
+                  <div class="project-content__product">
+                    <img
+                      src="/imgs/tgdd-clone-low.jpg"
+                      data-src="/imgs/tgdd-clone.png"
+                      alt="my third  app"
+                      class="project-content__product-img blur"
+                    />
+                    <a href="">Link to the project</a>
+                  </div>
+                </div>
+              </div>
+              <button
+                data-tab="1"
+                class="project-content__btn project-content__btn--close"
+              >
+                Show less
+              </button>
+            </div>
+          </div>
+          <!-- Back -->
+          <div class="project-contents project-contents--2 hidden">
+            <div class="project-content">
+              <div
+                class="project-content__img-box project-content__img-box--js"
+              >
+                <img
+                  src="/imgs/express.png"
+                  alt="js"
+                  class="project-content__img"
+                />
+              </div>
+              <h3 class="project-content__heading">
+                My first backend project with Express (Together with React in
+                the front)
+              </h3>
+              <div class="project-content__content">
+                <p>
+                  I built a backend server that serves products for the
+                  front-end which can fetch and it implemented CRUD operations,
+                  uploading images , data validation, authentication,...
+                </p>
+                <div class="project-content__product">
+                  <img
+                    src="/imgs/tgdd-clone-low.jpg"
+                    data-src="/imgs/tgdd-clone.png"
+                    alt="my first app"
+                    class="project-content__product-img blur"
+                  />
+                  <a href="">Link to the project</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- <button data-tab="2" class="project-content__btn">See more</button> -->
+          </div>
+          <!-- Devops -->
+          <div class="project-contents project-contents--3 hidden">
+            <p>Loading... I'm will be learning in the feature</p>
+          </div>
+        </div>
+      </div>
+      <div class="section section section--4" id="contact">
+        <h2 class="heading-secondary">Contact Me</h2>
+        <p class="text-bold">
+          Feel free to contact me any time. I'll try to answer back as soon as i
+          can
+        </p>
+        <div class="contact__content">
+          <form action="" class="contact__form">
+            <div class="contact__form-row">
+              <label for="name" class="contact__label">Name</label
+              ><input type="text" id="name" class="contact__input" />
+            </div>
+            <div class="contact__form-row">
+              <label for="email" class="contact__label">Email</label
+              ><input type="text" class="contact__input" id="email" />
+            </div>
+            <div class="contact__form-row">
+              <label for="message" class="contact__label">Message</label
+              ><textarea
+                type="text"
+                class="contact__input"
+                id="message"
+              ></textarea>
+            </div>
+            <button class="contact__btn">Contact me</button>
+          </form>
+          <div class="contact__info">
+            <div class="contact__info-row">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                />
+              </svg>
+              <p>phatminh900@gmail.com</p>
+            </div>
+            <div class="contact__info-row">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                />
+              </svg>
+              <p>0386325681</p>
+            </div>
+            <div class="contact__info-row">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                />
+              </svg>
+
+              <p>HoChiMinh City</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Spider man -->
+      <div class="spider-man">
+        <img src="/imgs/spider-man.png" alt="Spider man" />
+      </div>
+      <!-- Overlay -->
+    </main>
+    <div class="overlay hidden">
+      <!-- modal img -->
+      <button class="overlay__close">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+      <div class="modal">
+        <div class="modal__img-box" data-zoomist-src=""></div>
+      </div>
+    </div>
+  </body>
+</html>

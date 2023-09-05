@@ -1,0 +1,20 @@
+{
+  "name": "job-profile",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --force",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/zoomist": "^1.1.1",
+    "sass": "^1.66.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "zoomist": "^1.1.1"
+  }
+}
