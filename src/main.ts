@@ -1,5 +1,23 @@
 import Zoomist from "zoomist";
 import switchAudio from "./assets/audio/lamp_switch.mp3";
+import emailjs from "@emailjs/browser";
+
+emailjs.init({
+  publicKey: "pQhstshzhqMc2YTCU",
+  // Do not allow headless browsers
+  blockHeadless: true,
+  blockList: {
+    // The variable contains the email address
+    watchVariable: "userEmail",
+  },
+  limitRate: {
+    // Set the limit rate for the application
+    id: "app",
+    // Allow 1 request per 10s
+    throttle: 10000,
+  },
+});
+
 function init() {
   const nav = document.querySelector(".nav")!;
   function showActiveLink() {
@@ -245,6 +263,50 @@ function init() {
     openProjectImg();
     closeModal();
   }
+  async function sendEmail() {
+    const employerEmailEl = document.querySelector(
+      ".employer-email"
+    )! as HTMLInputElement;
+    const employerNameEl = document.querySelector(
+      ".employer-name"
+    )! as HTMLInputElement;
+    const subjectEl = document.querySelector(".subject")! as HTMLInputElement;
+    const formBtnEl=document.querySelector('.contact__form button')! as HTMLButtonElement
+    const messageEl = document.querySelector(
+      ".message"
+    )! as HTMLTextAreaElement;
+
+
+    const params = {
+      name: employerNameEl.value,
+      email: employerEmailEl.value,
+      subject: subjectEl.value,
+      message: messageEl.value,
+    };
+   try {
+    formBtnEl.textContent="Đang gửi"
+    await emailjs.send("service_txq3gwj", "template_2rqip68", params);
+    formBtnEl.textContent="Thanks. I'll answer back as soon as possible."
+    setTimeout(() => {
+    formBtnEl.textContent="Contact"
+      
+    }, 5000);
+    employerEmailEl.value=''
+    employerNameEl.value=''
+    subjectEl.value=''
+    formBtnEl.value=''
+    messageEl.value=''
+   } catch (error) {
+    alert('Some thing went wong')
+   }
+  }
+  (
+    document.querySelector(".contact__form")! as HTMLFormElement
+  ).addEventListener("submit", (e) => {
+    e.preventDefault();
+    sendEmail();
+  });
+
   //   smoothScroll();
   revealProjectImgs();
   changeTabProject();

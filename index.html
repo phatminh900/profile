@@ -249,7 +249,39 @@
             </button>
           </div>
           <!-- Front -->
+          
           <div class="project-contents project-contents--1">
+            <div class="project-content">
+              <div
+                class="project-content__img-box project-content__img-box--react"
+              >
+                <img
+                  src="/imgs/next-js.png"
+                  alt="js"
+                  class="project-content__img"
+                />
+              </div>
+              <h3 class="project-content__heading">
+                My most completed app (Ecommerce Site)
+              </h3>
+              <div class="project-content__content">
+                <p>
+                  After working at Beone Technology and Service I decided to use all the knowledge I learned to build a complete ecommerce  app ready to use not only with the beautiful interface but also the performance and experience for users. Using the latest technologies (Nextjs 14, TailwindCss , Shadcn , Zustand for data mangenent , React Query + Trpc for data fetching and mutating and zod for data validation.)
+                </p>
+                <div class="project-content__product">
+                  <img
+                    src="/imgs/zepy-chat-app-low.jpg"
+                    data-src="/imgs/zepy-chat-app.png"
+                    alt="my third  app"
+                    class="project-content__product-img blur"
+                  />
+                  <a target="_blank" href="https://zepy-chat-app.onrender.com/"
+                    >Link to the project</a
+                  >
+                </div>
+              </div>
+            </div>
+
             <div class="project-content">
               <div
                 class="project-content__img-box project-content__img-box--react"
@@ -261,7 +293,7 @@
                 />
               </div>
               <h3 class="project-content__heading">
-                My completed project ever with modern technologies
+                My chat app 
               </h3>
               <div class="project-content__content">
                 <p>
@@ -441,7 +473,7 @@
       </div>
       <div class="section section section--4" id="contact">
         <h2 class="heading-secondary">Contact Me</h2>
-        <p class="text-bold">
+        <p class="text-bold text-base">
           Feel free to contact me any time. I'll try to answer back as soon as i
           can
         </p>
@@ -449,18 +481,28 @@
           <form action="" class="contact__form">
             <div class="contact__form-row">
               <label for="name" class="contact__label">Name</label
-              ><input type="text" id="name" class="contact__input" />
+              ><input type="text" id="name" class="contact__input employer-name" />
             </div>
             <div class="contact__form-row">
               <label for="email" class="contact__label">Email</label
-              ><input type="text" class="contact__input" id="email" />
+              ><input type="email" class="contact__input employer-email" id="email" />
+            </div>
+            <div class="contact__form-row">
+              <label for="subject" class="contact__label">Subject</label
+              ><input
+                type="text"
+                class="contact__input subject"
+                class="contact__input"
+                id="subject"
+              ></input>
             </div>
             <div class="contact__form-row">
               <label for="message" class="contact__label">Message</label
               ><textarea
                 type="text"
-                class="contact__input"
+                class="contact__input message"
                 id="message"
+                rows="8"
               ></textarea>
             </div>
             <button class="contact__btn">Contact me</button>

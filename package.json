@@ -15,6 +15,7 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "zoomist": "^1.1.1"
   }
 }
